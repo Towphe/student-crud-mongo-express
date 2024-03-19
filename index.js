@@ -105,13 +105,8 @@ app.patch('/:studentNo', async (req, res) => {
     await res.send({detail: 'Update success.'});
 });
 
-// configure server to listen to 
+// configure server to listen to assigned port
 app.listen(port, () => {
     // startup behaviour
     console.log(`Example app listening on ${port}`)
 });
-
-
-// const s1 = new Student({firstName: "JC", lastName: "Castillo", studentNo: '2022-03647', standing: "SOPHOMORE"});
-
-// await s1.save();
